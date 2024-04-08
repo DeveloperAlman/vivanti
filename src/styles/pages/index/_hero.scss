@@ -1,0 +1,86 @@
+.hero {
+    width: 100dvw;
+    min-height: 100%;
+    background: url(../../../../src/images/pages/index/hero/hero-bg.png) center no-repeat;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 560px;
+        position: relative;
+        @media screen and (max-width: 650px) {
+            min-height: 243px;
+        }
+    }
+}
+.content-hero {
+    @media screen and (max-width: 901px) {
+        position: absolute;
+        bottom: -69px;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width: 650px) {
+        bottom: -45px;
+    }
+    &__heading {
+        text-transform: uppercase;
+    }
+
+    &__heading--primary {
+        background: $color-primary;
+        color: $color-white;
+        @media screen and (max-width: 901px) {
+            border-bottom-left-radius: 0 !important ;
+        }
+    }
+
+    &__heading--secondary {
+        color: $color-primary;
+        background: $color-white;
+        @media screen and (max-width: 901px) {
+            background: $color-primary--lighten;
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+    }
+}
+.illustration-hero {
+    margin-right: 125px;
+    align-self: flex-end;
+    @media screen and (max-width: 901px) {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width: 650px) {
+        bottom: 0;
+    }
+
+    &__img {
+        width: 367px;
+        height: 492px;
+        @media screen and (max-width: 1025px) {
+            width: 280px;
+            height: auto;
+        }
+        @media screen and (max-width: 650px) {
+            width: 170px;
+            height: 228px;
+        }
+    }
+}
+
+.content-hero__heading--primary,
+.content-hero__heading--secondary {
+    border-radius: 8px;
+    padding: 12px 18px;
+    width: max-content;
+    @media screen and (max-width: 650px) {
+        padding: 8px 12px;
+    }
+}

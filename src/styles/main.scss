@@ -1,0 +1,12 @@
+// Import global settings
+@import "variables", "normalize", "mixins", "globals", "components";
+
+// Import page styles
+@import "./pages/index/header";
+@import "./pages/index/hero";
+@import "./pages/index/welcome";
+@import "./pages/index/about";
+@import "./pages/index/gallery";
+@import "./pages/index/contact";
+@import "./pages/index/success";
+@import "./pages/index/footer";

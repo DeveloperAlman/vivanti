@@ -1,0 +1,11 @@
+.button--primary {
+    padding: 14px 18px;
+    background: $color-primary;
+    border-radius: 8px;
+    display: flex;
+    width: max-content;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-white;
+}

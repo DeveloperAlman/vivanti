@@ -1,0 +1,13 @@
+.welcome {
+    padding: 96px 0;
+    @media screen and (max-width: 650px) {
+        padding-bottom: 30px;
+    }
+    &__description {
+        font-style: italic;
+        font-weight: 600;
+        @include fluid-text(24, 18);
+        line-height: 140%;
+        text-align: center;
+    }
+}

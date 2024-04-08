@@ -1,0 +1,41 @@
+.success {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #e9eaf9 0%, #f5f5ff 100%);
+    &__inner {
+        height: 100%;
+    }
+
+    &__content {
+        height: 100%;
+    }
+}
+.content-success {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    &__description {
+        font-weight: 600;
+        @include fluid-text(24, 18);
+        line-height: 140%;
+        color: $color-primary;
+    }
+}
+.content-success {
+    @media screen and (max-width: 650px) {
+        flex-direction: column !important;
+        gap: 24px;
+        text-align: center;
+    }
+    &__icon {
+        width: 75px;
+        height: 75px;
+    }
+}

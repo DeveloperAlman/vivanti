@@ -1,0 +1,23 @@
+.footer {
+    padding: 64px 0;
+    background: $color-primary--darken;
+    @media screen and (max-width: 481px) {
+        margin-top: 30px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 481px) {
+            flex-direction: column-reverse;
+            gap: 18px;
+            text-align: center;
+        }
+    }
+
+    &__copy {
+        color: $color-white;
+        @include fluid-text(16, 14);
+        line-height: 130%;
+    }
+}
